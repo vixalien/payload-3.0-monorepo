@@ -4,69 +4,73 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@payloadcms/db-mongodb':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(payload@3.0.0-beta.9)
-  '@payloadcms/db-postgres':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@types/react@18.2.77)(payload@3.0.0-beta.9)(react@18.2.0)
-  '@payloadcms/next':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@types/react@18.2.77)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.3.0-canary.7)(payload@3.0.0-beta.9)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
-  '@payloadcms/richtext-lexical':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-beta.9)(@payloadcms/translations@3.0.0-beta.9)(@payloadcms/ui@3.0.0-beta.9)(payload@3.0.0-beta.9)(typescript@5.4.5)(yjs@13.6.14)
-  '@payloadcms/richtext-slate':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@payloadcms/translations@3.0.0-beta.9)(@payloadcms/ui@3.0.0-beta.9)(payload@3.0.0-beta.9)(react-dom@18.2.0)
-  '@payloadcms/ui':
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@types/react@18.2.77)(monaco-editor@0.47.0)(next@14.3.0-canary.7)(payload@3.0.0-beta.9)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
-  cross-env:
-    specifier: ^7.0.3
-    version: 7.0.3
-  next:
-    specifier: 14.3.0-canary.7
-    version: 14.3.0-canary.7(react-dom@18.2.0)(react@18.2.0)
-  payload:
-    specifier: 3.0.0-beta.9
-    version: 3.0.0-beta.9(@swc/core@1.4.13)(@swc/types@0.1.6)
-  react:
-    specifier: ^18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
-  sharp:
-    specifier: 0.32.6
-    version: 0.32.6
+importers:
 
-devDependencies:
-  '@types/node':
-    specifier: ^20.11.25
-    version: 20.12.7
-  '@types/react':
-    specifier: ^18.2.64
-    version: 18.2.77
-  '@types/react-dom':
-    specifier: ^18.2.21
-    version: 18.2.25
-  dotenv:
-    specifier: ^16.4.5
-    version: 16.4.5
-  eslint:
-    specifier: ^8.57.0
-    version: 8.57.0
-  eslint-config-next:
-    specifier: 14.1.0
-    version: 14.1.0(eslint@8.57.0)(typescript@5.4.5)
-  tsx:
-    specifier: ^4.7.1
-    version: 4.7.2
-  typescript:
-    specifier: ^5.4.2
-    version: 5.4.5
+  .: {}
+
+  apps/web:
+    dependencies:
+      '@payloadcms/db-mongodb':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(payload@3.0.0-beta.2)
+      '@payloadcms/db-postgres':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@types/react@18.2.74)(payload@3.0.0-beta.2)(react@18.2.0)
+      '@payloadcms/next':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@types/react@18.2.74)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-beta.2)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      '@payloadcms/richtext-lexical':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-beta.2)(@payloadcms/translations@3.0.0-beta.2)(@payloadcms/ui@3.0.0-beta.2)(payload@3.0.0-beta.2)(typescript@5.4.4)(yjs@13.6.14)
+      '@payloadcms/richtext-slate':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@payloadcms/translations@3.0.0-beta.2)(@payloadcms/ui@3.0.0-beta.2)(payload@3.0.0-beta.2)(react-dom@18.2.0)
+      '@payloadcms/ui':
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@types/react@18.2.74)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-beta.2)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
+      next:
+        specifier: 14.2.0-canary.23
+        version: 14.2.0-canary.23(react-dom@18.2.0)(react@18.2.0)
+      payload:
+        specifier: 3.0.0-beta.2
+        version: 3.0.0-beta.2(@swc/core@1.4.12)(@swc/types@0.1.6)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      sharp:
+        specifier: 0.32.6
+        version: 0.32.6
+    devDependencies:
+      '@types/node':
+        specifier: ^20.11.25
+        version: 20.12.4
+      '@types/react':
+        specifier: ^18.2.64
+        version: 18.2.74
+      '@types/react-dom':
+        specifier: ^18.2.21
+        version: 18.2.24
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      eslint-config-next:
+        specifier: 14.1.0
+        version: 14.1.0(eslint@8.57.0)(typescript@5.4.4)
+      tsx:
+        specifier: ^4.7.1
+        version: 4.7.2
+      typescript:
+        specifier: ^5.4.2
+        version: 5.4.4
 
 packages:
 
